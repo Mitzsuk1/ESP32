@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESP32 Power Monitor</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>⚡ ESP32 Power Dashboard</h1>
+        <p>Real-time Voltage · Current · Power Monitoring</p>
+    </header>
+
+    <section class="cards">
+        <div class="card">
+            <h3>Voltage</h3>
+            <p id="voltage" class="value">-- V</p>
+        </div>
+
+        <div class="card">
+            <h3>Current</h3>
+            <p id="current" class="value">-- A</p>
+        </div>
+
+        <div class="card">
+            <h3>Power</h3>
+            <p id="power" class="value">-- W</p>
+        </div>
+
+        <div class="card">
+            <h3>Status</h3>
+            <p id="status" class="status normal">Normal</p>
+        </div>
+    </section>
+
+    <section class="chart-section">
+        <h2>Real-Time Power Graph</h2>
+        <canvas id="powerChart"></canvas>
+    </section>
+
+    <section class="logs">
+        <h2>Device Logs</h2>
+        <div id="logBox" class="logBox"></div>
+    </section>
+    <div id="pzem-container" class="device-grid">
+
+    <!-- Automatically filled by JS -->
+
+</div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
