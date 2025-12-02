@@ -1,0 +1,22 @@
+{
+  "pzem1": {
+    "voltage": 230,
+    "current": 1.20,
+    "power": 276
+  },
+  "pzem2": {
+    "voltage": 228,
+    "current": 0.85,
+    "power": 193
+  },
+  "pzem3": {
+    "voltage": 229,
+    "current": 1.05,
+    "power": 240
+  },
+  "pzem4": {
+    "voltage": 229,
+    "current": 1.05,
+    "power": 240
+  }
+}
